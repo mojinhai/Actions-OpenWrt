@@ -17,12 +17,12 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
-  FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
-  DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part2.sh
+  REPO_URL: https://github.com/mojinhai/immortalwrt-mt798x-6.6
+  REPO_BRANCH: '2410'
+  CONFIG_FILE: n60pro.config
+  DIY_P1_SH: |
+    echo 'src-git kiddin9 https://github.com/kiddin9/kwrt-packages' >> feeds.conf.default
+  DIY_P2_SH: ''
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
