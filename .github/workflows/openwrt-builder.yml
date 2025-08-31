@@ -76,6 +76,7 @@ jobs:
       run: |
         cd openwrt
         make defconfig
+        echo 'TARGET_CFLAGS += -Wno-error=format-nonliteral' >> feeds/packages/libs/libxcrypt/Makefile
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
