@@ -19,7 +19,7 @@ on:
 env:
   REPO_URL: https://github.com/mojinhai/immortalwrt-mt798x-6.6
   REPO_BRANCH: 'openwrt-24.10-6.6'
-  CONFIG_FILE: n6pro.config
+  CONFIG_FILE: n60pro.config
   DIY_P2_SH: '' # DIY_P1_SH 已被整合到下面的步骤中，可以删除
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
