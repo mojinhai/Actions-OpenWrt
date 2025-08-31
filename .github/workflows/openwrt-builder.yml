@@ -60,7 +60,7 @@ jobs:
     - name: Load custom feeds
       run: |
         cd openwrt
-        $GITHUB_WORKSPACE/$DIY_P1_SH
+        echo 'src-git kiddin9 https://github.com/kiddin9/kwrt-packages' >> feeds.conf.default
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
